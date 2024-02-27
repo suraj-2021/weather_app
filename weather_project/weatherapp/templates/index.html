@@ -1,0 +1,11 @@
+<form method="post" action="{% url 'city_submit' %}">
+    {% csrf_token %}
+    <label for="city">Enter City Name:</label>
+    <input type="text" id="city" name="City" required>
+    <input type="submit" value="Submit">
+</form>
+
+<h3>country code : {{country_code}}</h1>
+    <h5>coordinate : {{coordinate}}</h5>
+    <h5>temp : {{temp}}</h5>
+    
